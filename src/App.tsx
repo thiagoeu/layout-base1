@@ -1,12 +1,11 @@
 import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import { AppRoutes } from "./routes";
 
 export const App = () => {
   return (
-    <>
-      <div>olá</div>
-      <h2>sou eu de novo</h2>
-    </>
+    <BrowserRouter>
+      <AppRoutes></AppRoutes>
+    </BrowserRouter>
   );
 };
-
-export default App;
